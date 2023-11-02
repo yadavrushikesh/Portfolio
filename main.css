@@ -12,10 +12,10 @@
 }
 
 :root{
-    --bg-color: #1f242d;
+    --bg-color: #000308;
     --second-bg-color:#323946;
     --text-color: #fff;
-    --main-color: cyan;
+    --main-color: rgba(117, 238, 4, 0.991);
 }
 
 html{
@@ -256,6 +256,7 @@ span{
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
+display: flex;
 }
 
 .project-container .project-box{
@@ -264,11 +265,16 @@ span{
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .project-box img{
     width: 100%;
     transition: .5s ease;
+    height: 500px;
+
 }
 
 .project-box:hover img{
